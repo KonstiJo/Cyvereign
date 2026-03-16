@@ -1,0 +1,37 @@
+# ============================================================
+# Cyvereign - Cyber Security AI System
+# requirements.txt
+# ============================================================
+
+# --- LLM & Ollama Integration ---
+ollama>=0.1.0                  # Python client for local Ollama LLM server
+
+# --- RAG: LangChain ecosystem ---
+langchain>=0.2.0               # Core LangChain framework
+langchain-community>=0.2.0     # Community integrations (Ollama, ChromaDB loaders)
+langchain-chroma>=0.1.0        # LangChain <-> ChromaDB integration
+
+# --- Vector Database ---
+chromadb>=0.5.0                # Local vector store for document embeddings
+
+# --- Embeddings ---
+sentence-transformers>=3.0.0   # HuggingFace sentence embeddings (runs locally)
+
+# --- CLI Interface ---
+click>=8.1.0                   # Modern CLI toolkit
+rich>=13.0.0                   # Beautiful terminal output with syntax highlighting
+
+# --- HTTP / API helpers ---
+requests>=2.31.0               # HTTP requests for CVE lookup (NVD API)
+
+# --- Training Pipeline (LoRA / Fine-Tuning) ---
+torch>=2.3.0                   # PyTorch - GPU/CPU tensor operations
+transformers>=4.42.0           # HuggingFace Transformers
+peft>=0.11.0                   # Parameter-Efficient Fine-Tuning (LoRA)
+datasets>=2.20.0               # HuggingFace Datasets for training data
+accelerate>=0.31.0             # Multi-GPU / mixed-precision training helper
+bitsandbytes>=0.43.0           # 4-bit / 8-bit quantisation for LoRA training
+
+# --- Utilities ---
+python-dotenv>=1.0.0           # Load environment variables from .env file
+tqdm>=4.66.0                   # Progress bars
